@@ -1,0 +1,23 @@
+body {
+    text-align: center;
+    font-family: Tahoma;
+}
+img {
+    width: 150px;
+    height: 100px;
+}
+.akapit {
+    color: rgba(245, 245, 245, 0.856);
+}
+.akapit[title="Zwrotka 1"] {
+    background-color: rgb(113, 143, 54);
+}
+.akapit[title="Zwrotka 2"] {
+    background-color: red;
+}
+.akapit[title="Zwrotka 3"] {
+    background-color: blue;
+}
+.akapit[title="Zwrotka 4"] {
+    background-color: teal;
+}
