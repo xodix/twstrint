@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TABELA</title>
+  <style>
+    td {
+      border: 1px solid black;
+    }
+    .table-title {
+      background: rgb(137, 235, 99);
+      font-family: 'Comic sans Ms';
+      font-size: 14pt;
+      text-align: center;
+    }
+    .table-head {
+      font-family: Courier;
+      font-size: 14pt;
+      text-align: center;
+      color: #00001a;
+    }
+    .pulawy {
+      background-color: yellow;
+      font-family: 'Segoe UI';
+      font-size: 10pt;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <!-- A szerokości same się nie skalują przypadiem? -->
+  <table>
+    <tr>
+      <td colspan="4" class="table-title">Dane pracowników</td>
+    </tr>
+    <tr class="table-head">
+      <td>LP</td>
+      <td>Nazwisko i imię</td>
+      <td>Zawód</td>
+      <td>Miejsce urodzenia</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>Zapomniałem kto</td>
+      <td>Elektryk</td>
+      <td rowspan="3" class="pulawy">Puławy</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>się czego</td>
+      <td>Mechanik</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>uczy</td>
+      <td>Informatyk</td>
+    </tr>
+  </table>
+</body>
+</html>
