@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,79 +9,143 @@
     body {
       font-family: 'Segoe UI';
     }
-    td, th {
-      border: 2px solid red;
+
+    table {
+      background-color: rgb(255, 224, 219);
     }
+
+    td,
+    th {
+      border: 1px solid black;
+    }
+
+    td {
+      color: green;
+    }
+
+    th {
+      background-color: white;
+    }
+
     .internal-table {
       border-spacing: 4px;
     }
   </style>
 </head>
+
 <body>
   <table>
     <tr>
-      <td></td>
-      <th>Komórka nagłówkowa</th>
-      <td></td>
+      <td><br></td>
+      <th style="color: purple;">Komórka nagłówkowa</th>
+      <td><br></td>
     </tr>
     <tr>
       <td>
-        <table class="internal-table">
+        <table>
           <tr>
-            <td colspan="3">Tabela 1</td>
+            <td>
+              <table class="internal-table">
+                <tr>
+                  <td colspan="3">Tabela 1</td>
+                </tr>
+                <tr>
+                  <td><br></td>
+                  <td><br></td>
+                  <td><br></td>
+                </tr>
+                <tr>
+                  <td><br></td>
+                  <td><br></td>
+                  <td><br></td>
+                </tr>
+              </table>
+            </td>
           </tr>
-          <tr>
-            <td></td>
-            <td></td>
-            <td></td>
+          <tr style="visibility: hidden;">
+            <td>
+
+            </td>
           </tr>
-          <tr>
-            <td></td>
-            <td></td>
-            <td></td>
+          <tr style="visibility: hidden;">
+            <td>
+
+            </td>
           </tr>
         </table>
       </td>
       <td>
-        <table class="internal-table">
+        <table>
           <tr>
-            <td></td>
-            <td></td>
-            <td></td>
+            <td  style="visibility: hidden;">
+            </td>
+          </tr>
+          <tr style="visibility: hidden;">
+            <td>
+
+            </td>
           </tr>
           <tr>
-            <td colspan="3">Tabela 1</td>
-          </tr>
-          <tr>
-            <td></td>
-            <td></td>
-            <td></td>
+            <td>
+              <table class="internal-table">
+                <tr>
+                  <td colspan="3">Tabela 1</td>
+                </tr>
+                <tr>
+                  <td><br></td>
+                  <td><br></td>
+                  <td><br></td>
+                </tr>
+                <tr>
+                  <td><br></td>
+                  <td><br></td>
+                  <td><br></td>
+                </tr>
+              </table>
+            </td>
           </tr>
         </table>
       </td>
       <td>
-        <table class="internal-table">
-          <tr>
-            <td></td>
-            <td></td>
-            <td></td>
+        <table>
+          <tr style="visibility: hidden;">
+            <td>
+
+            </td>
           </tr>
           <tr>
-            <td></td>
-            <td></td>
-            <td></td>
+            <td>
+              <table class="internal-table">
+                <tr>
+                  <td colspan="3">Tabela 1</td>
+                </tr>
+                <tr>
+                  <td><br></td>
+                  <td><br></td>
+                  <td><br></td>
+                </tr>
+                <tr>
+                  <td><br></td>
+                  <td><br></td>
+                  <td><br></td>
+                </tr>
+              </table>
+            </td>
           </tr>
-          <tr>
-            <td colspan="3">Tabela 1</td>
+          <tr style="visibility: hidden;">
+            <td>
+
+            </td>
           </tr>
         </table>
       </td>
     </tr>
     <tr>
-      <th>Komórka nagłówkowa</th>
-      <td></td>
-      <th>Komórka nagłówkowa</th>
+      <th style="color: red;">Komórka nagłówkowa</th>
+      <td><br></td>
+      <th style="color: red;">Komórka nagłówkowa</th>
     </tr>
   </table>
 </body>
+
 </html>
