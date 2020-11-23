@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Grupa wiekowa</title>
+  <style>
+    body {
+      background: rgb(51, 26, 0);
+      color: rgb(255, 255, 26);
+    }
+
+    fieldset {
+      background: #e6ffe6;
+    }
+  </style>
+</head>
+
+<body>
+  <form>
+    <fieldset>
+      <legend>Grupa Wiekowa</legend>
+      <input type="radio" name="wiek">0-15
+      <br>
+      <input type="radio" name="wiek">16-24
+      <br>
+      <input type="radio" name="wiek">25-35
+      <br>
+      <input type="radio" name="wiek">50+
+      <br>
+    </fieldset>
+    <label for="marka_samochodu">Podaj ulubioną markę samochodu:</label>
+    <select name="marka_samochodu">
+      <option value="Ford">Ford</option>
+      <option value="Renault">Renault</option>
+      <option value="Chevrolet">Chevrolet</option>
+      <option value="Toyota">Toyota</option>
+      <option value="inne">inne</option>
+    </select>
+    <br>
+    <label for="kolor">Podaj swój ulubiony kolor:</label>
+    <input list="kolory" name="kolor">
+    <datalist id="kolory">
+      <option value="zielony">
+      <option value="czerwony">
+      <option value="niebieski">
+      <option value="żółty">
+      <option value="pomarańczowy">
+      <option value="fioletowy">
+    </datalist>
+  </form>
+  <label for="wiersz">Podaj 4 paragrafy swojego ulubionego wiersza:</label>
+  <br>
+  <textarea rows="4" name="wiersz"></textarea>
+
+</body>
+
+</html>

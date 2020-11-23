@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Piekarnia grachamka</title>
+  <style>
+    h2 {
+      text-align: center;
+      font-family: 'Comic Sans MS';
+    }
+  </style>
+</head>
+
+<body>
+  <h2>Piekarnia grachamka</h2>
+  <form action="zamowienie.php">
+    <ul>
+      <li>
+        <h4>Chleb</h4>
+        <select name="chleb">
+          <option value="żytni">żytni</option>
+          <option value="wiejski">wiejski</option>
+          <option value="razowy">razowy</option>
+          <option value="pszenny">pszenny</option>
+        </select>
+      </li>
+      <li>
+        <h4>Bułki</h4>
+        <select name="bulki">
+          <option value="z makiem">z makiem</option>
+          <option value="z sezamem">z sezamem</option>
+          <option value="z kruszonką">z kruszonką</option>
+          <option value="z cynamonem">z cynamonem</option>
+        </select>
+      </li>
+      <li>
+        <h4>Ciasta</h4>
+        <select name="ciasta">
+          <option value="makowiec">makowiec</option>
+          <option value="kremówka">kremówka</option>
+          <option value="leśne runo">leśne runo</option>
+          <option value="sernik">sernik</option>
+        </select>
+      </li>
+      <br>
+      <label for="imie">imię:</label>
+      <input type="text" name="imie">
+      <label for="nazwisko">nazwisko:</label>
+      <input type="text" name="nazwisko">
+    </ul>
+    <button>Zatwierdź</button>
+  </form>
+</body>
+
+</html>

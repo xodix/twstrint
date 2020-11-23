@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dane osobowe</title>
+  <style>
+    h3 {
+      text-align: center;
+      font-family: 'Times New Roman';
+      font-size: 30px;
+    }
+  </style>
+</head>
+
+<body>
+  <form accept="wynik.php">
+    <h3>Dane osobowe</h3>
+    <label for="imie">Imię</label>
+    <input type="text" name="imie">
+    <br>
+    <label for="nazwisko">Nazwisko</label>
+    <input type="text" name="nazwisko">
+    <br>
+    <fieldset>
+      <legend>Kolory:</legend>
+      <input type="radio" value="Czerwony" name="color"> <span style="color: red;">Czerwony</span> <br />
+      <input type="radio" value="Zielony" name="color"> <span style="color: green;">Zielony</span> <br />
+      <input type="radio" value="Niebieski" name="color"> <span style="color: blue;">Niebieski</span> <br />
+    </fieldset>
+    <input type="submit" value="Wyślij">
+  </form>
+</body>
+
+</html>
