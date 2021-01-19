@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formularz – Bartłomiej – Deska – 2IG – 2</title>
+</head>
+
+<body>
+  <h2 style="text-align: center; font-family: Verdana;">Formularz – Bartłomiej – Deska – 2IG – 2</h2>
+  <form action=" wyniki_formularza.php">
+    <fieldset>
+      <legend>Sprawdzian nr 2</legend>
+      <label for="imie" style="font-family: 'Segoe UI'; font-size: 12px; color: darkgreen;">Imię</label>
+      <br>
+      <input type="text" name="imie">
+      <br>
+      <label for="nazwisko" style="font-family: 'Segoe UI'; font-size: 12px; color: brown;">Nazwisko</label>
+      <br>
+      <input type="text" name="nazwisko">
+      <br>
+      <label for="plec" style="font-family: 'Segoe UI'; font-size: 12px; color: darkblue;">Płeć</label>
+      <br>
+      <input type="radio" name="plec" value="Mężczyzna"> Mężczyzna <br>
+      <input type="radio" name="plec" value="Kobieta"> Kobieta <br>
+      <input type="radio" name="plec" value="Inne"> Inne
+      <br>
+      <label for="samoocena" style="font-family: 'Segoe UI'; font-size: 12px; color: orange;">Jak oceniasz swoją
+        pracę?</label>
+      <br>
+      <select name="samoocena">
+        <option value="niedostateczny">niedostateczny</option>
+        <option value="dopuszczający">dopuszczający</option>
+        <option value="dostateczny">dostateczny</option>
+        <option value="dobry">dobry</option>
+        <option value="bardzo dobry" style="background-color: red;">bardzo dobry</option>
+      </select>
+      <br>
+      <button type="submit">Wyślij</button>
+    </fieldset>
+  </form>
+</body>
+
+</html>
