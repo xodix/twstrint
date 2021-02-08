@@ -1,0 +1,31 @@
+#H {
+  margin: 10px auto;
+  background-color: #c2c2d6;
+  width: 900px;
+  height: 700px;
+  background-image: url('./rysunek.png') top left;
+  background-repeat: repeat-x;
+  margin: 10px auto;
+  padding: 10px 20px;
+}
+
+#B {
+  width: 80%;
+  height: 60%;
+  background: #f0f0f5;
+  border: 2px outset #a3a3c2;
+  margin: 10px auto;
+  padding: 10px 20px;
+}
+#C {
+  text-align: center;
+  color: #33334d;
+  font-family: 'Comic Sans MS';
+  font-size: 2em;
+  font-family: 'Algerian';
+}
+
+p {
+  font-family: 'Algerian';
+  text-align: justify;
+}

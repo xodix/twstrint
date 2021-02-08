@@ -1,0 +1,22 @@
+body {
+  background: black;
+}
+
+div {
+  background: yellow;
+  width: 70%;
+  border-top: 5px solid red;
+  margin: 10px;
+}
+
+.center-padding {
+  margin: auto;
+  padding: 20px;
+}
+
+#two {
+  background: url('./tlo.png');
+  padding: 20px 40px;
+  border-left: 5px solid red;
+  border-right: 5px solid red;
+}
