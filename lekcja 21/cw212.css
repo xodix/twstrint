@@ -1,0 +1,46 @@
+body {
+  width: 970px;
+  margin: auto;
+}
+
+.flex-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+#logo,
+#logo > img {
+  width: 350px;
+  height: 150px;
+  background-color: #f2f2f2;
+}
+
+#address {
+  width: 590px;
+  height: 150px;
+  background-color: #f2f2f2;
+  font-family: "Segoe UI";
+}
+
+nav {
+  width: 90%;
+  height: 50px;
+  margin: auto;
+  background-color: #f2f2f2;
+  font-size: large;
+}
+
+main {
+  width: 590px;
+  background-color: #f2f2f2;
+  font-family: "Segoe UI";
+}
+
+#gallery {
+  width: 350px;
+  background-color: #f2f2f2;
+}
+#gallery > img {
+  width: 330px;
+  background-color: #f2f2f2;
+}
