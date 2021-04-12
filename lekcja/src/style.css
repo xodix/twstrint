@@ -1,0 +1,267 @@
+@use "sass:list";
+@use "sass:string";
+body {
+  background: #262547;
+  color: white;
+  font-size: clamp(23px, 3.5vw, 1000px);
+  margin: 0;
+  font-family: Ubuntu;
+}
+nav {
+  height: 6vh;
+  overflow: hidden;
+  background-color: #393939;
+}
+.menu {
+  background-color: #464646;
+  font-size: 0.5em;
+  padding: 0.5em;
+  border-radius: 0 0 5% 5%;
+}
+a {
+  color: white;
+  text-decoration: none !important;
+}
+a.nav-item:hover {
+  background: #393939 !important;
+}
+.nav-item > hr {
+  width: 100%;
+  border: unset;
+  border-top: 0.2em solid #41efa6;
+  margin: 0;
+}
+.nav-item > p {
+  width: 100%;
+  margin-top: 0;
+  margin-bottom: 0.6em;
+}
+.nav-item {
+  cursor: pointer;
+}
+.stripes {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: (1fr) [3];
+  grid-template-rows: repeat(3, 1fr);
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: right;
+  -ms-flex-pack: right;
+  justify-content: right;
+  height: 6vh;
+}
+.burger-menu {
+  height: 6vh;
+  overflow: hidden;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 6em;
+  margin-right: 0.3em;
+  -webkit-transition: height 0.7s cubic-bezier(0.89, 0.29, 1, 1);
+  transition: height 0.7s cubic-bezier(0.89, 0.29, 1, 1);
+}
+.burger-menu:hover {
+  height: 60vh;
+}
+.burger-menu:hover .stripes > hr {
+  width: 5.7em;
+}
+hr {
+  width: 1em;
+  margin: 0.1em;
+  border: 0.03em solid #41efa6;
+  -webkit-transition: width 0.7s cubic-bezier(0.89, 0.29, 1, 1);
+  transition: width 0.7s cubic-bezier(0.89, 0.29, 1, 1);
+}
+.centerd-header {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.centerd-header > h1 {
+  font-weight: bold;
+  font-size: 2.2em;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  margin-bottom: -0.5em;
+}
+.centerd-header > p {
+  font-size: 1.2;
+  font-family: Roboto;
+  font-style: italic;
+  margin-bottom: 0.3em;
+}
+.cta {
+  padding: 0.5em;
+  margin-top: 0;
+  background: #0d8548;
+  -webkit-box-shadow: -0.1em 0.13em 0.07em 0.1em #0d85488c;
+  box-shadow: -0.1em 0.13em 0.07em 0.1em #0d85488c;
+  border-radius: 28px;
+  font-size: 0.8em;
+  font-size: 0.8em;
+  color: white;
+  cursor: pointer;
+  -webkit-transition: background-color 0.4s, -webkit-box-shadow 0.4s;
+  transition: background-color 0.4s, -webkit-box-shadow 0.4s;
+  transition: background-color 0.4s, box-shadow 0.4s;
+  transition: background-color 0.4s, box-shadow 0.4s, -webkit-box-shadow 0.4s;
+}
+.cta:hover {
+  background-color: #16a85e;
+  -webkit-box-shadow: -0.1em 0.13em 0.07em 0.1em rgba(22, 168, 94, 0.549);
+  box-shadow: -0.1em 0.13em 0.07em 0.1em rgba(22, 168, 94, 0.549);
+}
+main {
+  width: 63%;
+  margin: auto;
+  font-size: 0.6em;
+  background: rgba(255, 255, 255, 0.01);
+  padding: 0.5em 2em;
+  min-height: calc(94vh - 1em);
+}
+main > h1 {
+  text-align: center;
+  margin-top: 0;
+}
+.flag {
+  display: inline-block;
+  width: 2em;
+  height: 1em;
+}
+.f1 {
+  background: url("https://api.iconify.design/cif-gb.svg") no-repeat center
+    center/contain;
+}
+.f2 {
+  background: url("https://api.iconify.design/cif-cz.svg") no-repeat center
+    center/contain;
+}
+.f3 {
+  background: url("https://api.iconify.design/cif-fr.svg") no-repeat center
+    center/contain;
+}
+.f4 {
+  background: url("https://api.iconify.design/cif-es.svg") no-repeat center
+    center/contain;
+}
+.f5 {
+  background: url("https://api.iconify.design/cif-de.svg") no-repeat center
+    center/contain;
+}
+.f6 {
+  background: url("https://api.iconify.design/cif-pt.svg") no-repeat center
+    center/contain;
+}
+.f7 {
+  background: url("https://api.iconify.design/cif-se.svg") no-repeat center
+    center/contain;
+}
+.f8 {
+  background: url("https://api.iconify.design/cif-hu.svg") no-repeat center
+    center/contain;
+}
+.f9 {
+  background: url("https://api.iconify.design/cif-it.svg") no-repeat center
+    center/contain;
+}
+.gallery {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr) [4];
+  grid-template-columns: repeat(4, 1fr);
+  row-gap: 0.4em;
+}
+.pic {
+  height: 7.2em;
+  width: 6.36em;
+  margin: auto;
+}
+.i1 {
+  background: url("https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/Bartolomew_I.jpg/174px-Bartolomew_I.jpg")
+    no-repeat center center/contain;
+}
+.i2 {
+  background: url("https://upload.wikimedia.org/wikipedia/commons/thumb/a/aa/Bartolomeu_Dias%2C_South_Africa_House_%28cut%29.JPG/108px-Bartolomeu_Dias%2C_South_Africa_House_%28cut%29.JPG")
+    no-repeat center center/contain;
+}
+.i3 {
+  background: url("https://upload.wikimedia.org/wikipedia/commons/thumb/4/46/Matteo_di_Giovanni_003.jpg/144px-Matteo_di_Giovanni_003.jpg")
+    no-repeat center center/contain;
+}
+.i4 {
+  background: url("https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/Fray_Bartolom%C3%A9_de_las_Casas.jpg/177px-Fray_Bartolom%C3%A9_de_las_Casas.jpg")
+    no-repeat center center/contain;
+}
+.i5 {
+  background: url("https://upload.wikimedia.org/wikipedia/commons/thumb/b/bf/GM_Bartlomiej_Macieja.JPG/160px-GM_Bartlomiej_Macieja.JPG")
+    no-repeat center center/contain;
+}
+.i6 {
+  background: url("https://upload.wikimedia.org/wikipedia/commons/thumb/3/39/Bartholomaeus_Schachmann_by_Anton_M%C3%B6ller.jpg/180px-Bartholomaeus_Schachmann_by_Anton_M%C3%B6ller.jpg")
+    no-repeat center center/contain;
+}
+.i7 {
+  background: url("https://upload.wikimedia.org/wikipedia/commons/thumb/3/37/Bartholomaeus_Keckermann.jpg/194px-Bartholomaeus_Keckermann.jpg")
+    no-repeat center center/contain;
+}
+.i8 {
+  background: url("https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/Bartlomiej_Dragowski.jpg/240px-Bartlomiej_Dragowski.jpg")
+    no-repeat center center/contain;
+}
+.overlay {
+  position: absolute;
+  margin: 0;
+  width: 6.36em;
+  height: 7.2em;
+  -webkit-filter: blur(5px);
+  filter: blur(5px);
+  background: rgba(206, 200, 200, 0.8);
+  opacity: 0;
+  -webkit-transition: opacity 400ms ease-in;
+  transition: opacity 400ms ease-in;
+}
+.icon {
+  display: block;
+  width: 2em;
+  height: 2em;
+  background: url("https://api.iconify.design/eva:question-mark-circle-fill.svg?color=%23393939")
+    no-repeat center center/contain;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  position: relative;
+  cursor: pointer;
+  opacity: 0;
+  -webkit-transition: opacity 400ms ease-in;
+  transition: opacity 400ms ease-in;
+}
+.pic:hover .icon {
+  opacity: 1;
+}
+.pic:hover .overlay {
+  opacity: 1;
+}
+.link {
+  color: #41efa6;
+}
+.link:hover {
+  text-decoration: underline !important;
+}
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  font-size: 0.4em;
+  text-align: center;
+  background: rgba(0, 0, 0, 0.5);
+}
+/*# sourceMappingURL=style.min.css.map */
