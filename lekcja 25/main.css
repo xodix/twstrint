@@ -1,0 +1,36 @@
+.container {
+  display: flex;
+}
+
+.box {
+  border: 1px solid black;
+  height: 100px;
+  flex: 1;
+}
+
+.common {
+  width: 100px;
+  height: 10px;
+  text-align: center;
+  background: red;
+}
+
+#b {
+  transform: scaleX(2);
+}
+
+#c {
+  transform: translate(50px, 50px);
+}
+
+#d {
+  transform: rotate(5deg);
+}
+
+#e {
+  transform: skew(300deg, 20deg);
+}
+
+#f {
+  transform: matrix(0.5, 1, 1.5, 0.1, 25, 25);
+}
