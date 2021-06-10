@@ -1,0 +1,29 @@
+body {
+  background-color: #000033;
+}
+
+h3 {
+  color: saddlebrown;
+  text-shadow: 3px 2px red;
+}
+
+p {
+  color: yellow;
+  font-size: 11pt;
+  text-align: center;
+}
+
+p:nth-child(2), p:nth-child(6) {
+  text-decoration: underline;
+  background: #33001a;
+}
+
+p:nth-child(3), p:nth-child(4), p:nth-child(5) {
+  text-indent: 50px;
+  background: #33001a;
+}
+
+p:nth-child(4) {
+  letter-spacing: 3px;
+  line-height: 1.5;
+}

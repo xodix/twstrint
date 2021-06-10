@@ -1,0 +1,23 @@
+body {
+  background: rgb(59, 12, 102);
+}
+
+ul {
+  display: grid;
+  font-size: 2em;
+  grid-template-columns: repeat(5, 1fr);
+  list-style: none;
+  color: white;
+}
+
+a:hover {
+  color: rgb(255, 0, 0);
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+a:visited {
+  color: rgb(255, 214, 163);
+}

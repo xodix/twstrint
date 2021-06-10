@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MAPA</title>
+  <style>
+    img {
+      margin: auto;
+      display: block;
+    }
+  </style>
+</head>
+<body>
+  <img src="./szach.png" alt="szachownica" usemap="#mapa"/>
+  <map name="mapa">
+    <area shape="rect" coords="0,0,25,25" href="https://zst.pulawy.pl/" target="_blank">
+    <area shape="rect" coords="75,0,100,25" href="#" target="_blank">
+    <area shape="rect" coords="0,75,25,100" href="./szach.png" target="_blank">
+  </map>
+</body>
+</html>

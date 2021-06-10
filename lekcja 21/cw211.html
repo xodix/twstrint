@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .flex-container {
+      display: flex;
+    }
+
+    header,
+    footer {
+      width: 100%;
+      background: rgb(43, 11, 133);
+      color: white;
+    }
+
+    nav {
+      flex: 1;
+      color: white;
+    }
+
+    .menu-item {
+      margin-bottom: 7px;
+      background: rgb(9, 170, 90);
+    }
+
+    .menu-item:hover {
+      background: rgb(7, 124, 66);
+    }
+
+    main {
+      flex: 3;
+      color: black;
+      background: lightgrey;
+    }
+
+    main>p {
+      font-family: 'Comic Sans MS';
+      font-size: 12pt;
+      text-align: justify;
+    }
+
+    main>p::first-line {
+      text-indent: 50px;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>Projektowanie układu strony WWW</h1>
+  </header>
+  <div class="flex-container">
+    <nav>
+      <div class="menu-item">Samochody</div>
+      <div class="menu-item">Motory</div>
+      <div class="menu-item">Rowery</div>
+      <div class="menu-item">Rolki</div>
+    </nav>
+    <main>
+      <h2>Opis na podstronie</h2>
+      <p>
+        Tu pojawi się treść naszego dokumentu. Opis zagadnień dotyczących wybranych zagadnień z menu obok, treści te
+        będą
+        umieszczone na kolejnych podstronach.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. In error illum non officia, architecto libero pariatur
+        excepturi quas ipsa praesentium voluptate eos enim odio debitis vel illo cumque ea beatae nesciunt laboriosam
+        eligendi iure, obcaecati tempora. Accusantium, asperiores nisi? Debitis dolor delectus distinctio iusto mollitia
+        at reiciendis ducimus laborum officia.
+      </p>
+      <p>
+        Dzięki temu ćwiczeniu nauczymy się konstruktować ukaład strony, powtórzymy konstrukcję odnośników oraz
+        przećwiczymy używanie formatowania CSS.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi consectetur sint voluptate cum magnam. Laboriosam
+        temporibus quos, minus quae cum quia laudantium sint numquam molestias natus culpa, incidunt ipsum doloribus
+        tempora accusamus nesciunt eaque ipsa aperiam quam magnam vel! Officiis?
+      </p>
+    </main>
+  </div>
+  <footer>
+    <h3>Bartłomiej Deska kl: 2IG</h3>
+  </footer>
+</body>
+
+</html>

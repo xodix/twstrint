@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      background: black;
+      color: yellow;
+      font-family: 'Comic Sans MS';
+      font-size: 12pt;
+    }
+
+    ol {
+      list-style: upper-latin;
+    }
+  </style>
+</head>
+
+<body>
+  <h2>Wycieczka klasowa</h2>
+  <form action="wycieczka.php">
+    <ol>
+      <li>
+        <label for="data">Data wyjazdu:</label>
+        <input type="text" name="data">
+      </li>
+      <li>
+        <label for="opiekun">Opiekun:</label>
+        <input type="text" name="opiekun">
+      </li>
+      <li>
+        <label for="transport">Środek transportu:</label>
+        <select name="transport">
+          <option value="autokar">autokar</option>
+          <option value="samolot">samolot</option>
+          <option value="bus">bus</option>
+          <option value="samochód prywatny">samochód prywatny</option>
+        </select>
+      </li>
+      <li>
+        <label for="opis">Opis trasy:</label>
+        <textarea name="opis" cols="30" rows="10"></textarea>
+      </li>
+    </ol>
+    <input type="submit" value="Zatwierdź">
+  </form>
+</body>
+
+</html>

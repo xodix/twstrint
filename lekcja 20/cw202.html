@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wyświetlanie i ukrywanie elementów na stronie</title>
+  <style>
+    p {
+      font-size: 2em;
+      font-family: 'Comic Sans MS';
+      text-align: center;
+      background-color: rgb(0, 0, 179);
+      color: white;
+    }
+
+    td {
+      border: 3px solid green;
+      border-spacing: 10px;
+      width: 25%;
+    }
+
+    img {
+      width: 100%;
+    }
+
+    td:nth-child(1) {
+      visibility: hidden;
+    }
+
+    td:last-of-type {
+      visibility: hidden;
+    }
+  </style>
+</head>
+
+<body>
+  <p>Wyświetlanie i ukrywanie elementów na stronie</p>
+  <table>
+    <tr>
+      <td><img src="./img.jpg" /></td>
+      <td><img src="./img.jpg" /></td>
+      <td><img src="./img.jpg" /></td>
+      <td><img src="./img.jpg" /></td>
+      <td><img src="./img.jpg" /></td>
+    </tr>
+    <tr>
+      <th>Obrazek 1</th>
+      <th>Obrazek 2</th>
+      <th>Obrazek 3</th>
+      <th>Obrazek 4</th>
+      <th>Obrazek 5</th>
+    </tr>
+  </table>
+</body>
+
+</html>

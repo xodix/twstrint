@@ -1,0 +1,80 @@
+body {
+  background: rgb(25, 25, 25);
+  color: white;
+  font-size: 2vw;
+}
+
+.container {
+  width: 50%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-items: center;
+  margin-bottom: 5em;
+  gap: 2em;
+  row-gap: 0.5em;
+}
+
+.card {
+  background: rgba(255, 255, 255, 0.1);
+  width: 100%;
+  border-radius: 5%;
+  padding: 0.5em;
+}
+
+.prod-link {
+  display: block;
+  margin: auto;
+  text-decoration: none !important;
+}
+
+.prod-link > button {
+  display: block;
+  margin: auto;
+  background: #0d8548;
+  color: white;
+  padding: 0.3em;
+  margin: auto;
+  border-radius: 1em;
+}
+
+header {
+  text-align: center;
+}
+
+img {
+  width: 250px;
+  height: 250px;
+  margin: auto;
+  display: block;
+}
+
+.left {
+  float: left;
+  font-size: 0.5em;
+}
+
+.right {
+  font-size: 0.5em;
+  float: right;
+}
+
+.spec {
+  clear: both;
+}
+
+a.shop-link {
+  text-align: center !important;
+  display: block;
+  margin: auto;
+  text-decoration: none;
+}
+
+a.shop-link:hover {
+  color: #41efa6 !important;
+}
+
+a.shop-link:visited {
+  color: white;
+  text-decoration: none;
+}

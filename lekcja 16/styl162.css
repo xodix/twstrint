@@ -1,0 +1,33 @@
+td, th {
+  background: rgb(255,255,230);
+  border: 1px solid black;
+}
+
+th {
+  text-shadow: 2px 2px 4px #6a10b483;
+}
+
+img {
+  width: 100%;
+  height: 80px;
+}
+
+h2 {
+  text-align: center;
+}
+
+p {
+  text-align: justify;
+  text-indent: 50px;
+  margin: 10px;
+  border-left: 10px solid red;
+  border-right: 10px solid red;
+}
+
+p:last-child {
+  background: url('./cw162.png');
+  background-repeat: no-repeat;
+  background-attachment: local;
+  background-size: cover;
+  color: red;
+}

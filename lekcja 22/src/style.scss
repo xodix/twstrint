@@ -1,0 +1,239 @@
+@use "sass:list";
+@use "sass:string";
+
+$bg-color: #262547;
+$text-color: white;
+$nav-bg-color: #393939;
+$secondary-color: #41EFA6;
+$button-bg: #0D8548;
+$nav-height: 6vh;
+$flags: "gb", "cz", "fr", "es", "de", "pt", "se", "hu", "it";
+$pics: "2/29/Bartolomew_I.jpg/174px-Bartolomew_I.jpg", "a/aa/Bartolomeu_Dias%2C_South_Africa_House_%28cut%29.JPG/108px-Bartolomeu_Dias%2C_South_Africa_House_%28cut%29.JPG", "4/46/Matteo_di_Giovanni_003.jpg/144px-Matteo_di_Giovanni_003.jpg", "b/b9/Fray_Bartolom%C3%A9_de_las_Casas.jpg/177px-Fray_Bartolom%C3%A9_de_las_Casas.jpg", "b/bf/GM_Bartlomiej_Macieja.JPG/160px-GM_Bartlomiej_Macieja.JPG", "3/39/Bartholomaeus_Schachmann_by_Anton_M%C3%B6ller.jpg/180px-Bartholomaeus_Schachmann_by_Anton_M%C3%B6ller.jpg", "3/37/Bartholomaeus_Keckermann.jpg/194px-Bartholomaeus_Keckermann.jpg", "5/5e/Bartlomiej_Dragowski.jpg/240px-Bartlomiej_Dragowski.jpg";
+
+@mixin center-ver-hor {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+@mixin top-right-corner {
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+body {
+    background: $bg-color;
+    color: white;
+    font-size: clamp(23px, 3.5vw, 1000px);
+    margin: 0;
+    font-family: Ubuntu;
+}
+
+nav {
+    height: $nav-height;
+    overflow: hidden;
+    background-color: $nav-bg-color;
+}
+
+.menu {
+    background-color: #464646;
+    font-size: .5em;
+    padding: .5em;
+    border-radius: 0 0 5% 5%;
+}
+
+a {
+    color: white;
+    text-decoration: none !important;
+}
+
+a.nav-item:hover {
+    background: $nav-bg-color !important;
+}
+
+.nav-item > hr {
+    width: 100%;
+    border: unset;
+    border-top: .2em solid $secondary-color;
+    margin: 0;
+}
+
+.nav-item > p {
+    width: 100%;
+    margin-top: 0;
+    margin-bottom: .6em;
+}
+
+.nav-item {
+    cursor: pointer;
+}
+
+.stripes {
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    align-items: center;
+    justify-content: right;
+    height: $nav-height;
+}
+
+.burger-menu {
+    height: $nav-height;
+    overflow: hidden;
+    @include top-right-corner;
+    width: 6em;
+    margin-right: .3em;
+    transition: height .7s cubic-bezier(0.89, 0.29, 1, 1);
+}
+
+.burger-menu:hover {
+    height: 60vh;
+    .stripes > hr {
+        width: 5.7em;
+    }
+}
+
+hr {
+    width: 1em;
+    margin: .1em;
+    border: .03em solid $secondary-color;
+    transition: width .7s cubic-bezier(0.89, 0.29, 1, 1);
+}
+
+.centerd-header {
+    @include center-ver-hor;
+    text-align: center;
+}
+
+.centerd-header > h1 {
+    font-weight: bold;
+    font-size: 2.2em;
+    
+    letter-spacing: 0.09em;
+    text-transform: uppercase;
+    margin-bottom: -.5em;
+}
+
+.centerd-header > p {
+    font-size: 1.2;
+    font-family: Roboto;
+    font-style: italic;
+    margin-bottom: .3em;
+}
+
+// cta - call to action
+.cta {
+    padding: .5em;
+    margin-top: 0;
+    background: $button-bg;
+    box-shadow: -.1em .13em .07em .1em #0d85488c;
+    border-radius: 28px;
+    // button font formatting
+    font-size: .8em;
+    font-size: .8em;
+    color: white;
+    cursor: pointer;
+    transition: background-color .4s, box-shadow .4s;
+}
+
+.cta:hover {
+    background-color: rgb(22, 168, 94);
+    box-shadow: -.1em .13em .07em .1em rgba(22, 168, 94, 0.549);
+}
+
+main {
+    width: 63%;
+    margin: auto;
+    font-size: .6em;
+    background: rgba(255, 255, 255, 0.01);
+    padding: .5em 2em;
+    // main needs to span the whole page: 100vh - nav height - padding top - padding botttom
+    min-height: calc(94vh - 1em);
+}
+
+main > h1 {
+    text-align: center;
+    margin-top: 0;
+}
+
+.flag {
+    display: inline-block;
+    width: 2em;
+    height: 1em;
+}
+
+@for $i from 1 through 9 {
+    .f#{$i} {
+        $x: nth($flags, $i);
+        background: url('https://api.iconify.design/cif-#{$x}.svg') no-repeat center center / contain;
+    }
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    row-gap: .4em;
+}
+
+.pic {
+    height: 7.2em;
+    width: 6.36em;
+    margin: auto;
+}
+
+@for $i from 1 through 8 {
+    .i#{$i} {
+        $x: nth($pics, $i);
+        background: url('https://upload.wikimedia.org/wikipedia/commons/thumb/#{$x}') no-repeat center center / contain;
+    }
+}
+
+.overlay {
+    position: absolute;
+    margin: 0;
+    width: 6.36em;
+    height: 7.2em;
+    filter: blur(5px);
+    background: rgba(206, 200, 200, 0.8);
+    opacity: 0;
+    transition: opacity 400ms ease-in;
+}
+
+.icon {
+    display: block;
+    width: 2em;
+    height: 2em;
+    background: url('https://api.iconify.design/eva:question-mark-circle-fill.svg?color=%23393939') no-repeat center center / contain;
+    @include center-ver-hor();
+    position: relative;
+    cursor: pointer;
+    opacity: 0;
+    transition: opacity 400ms ease-in;
+}
+
+.pic:hover {
+    .icon {
+        opacity: 1;
+    }
+    .overlay {
+        opacity: 1;
+    }
+}
+
+.link {
+    color: $secondary-color;
+}
+
+.link:hover {
+    text-decoration: underline !important;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    font-size: .4em;
+    text-align: center;
+    background: rgba(0, 0, 0, .5);
+}
